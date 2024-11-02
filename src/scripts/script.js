@@ -15,7 +15,7 @@ async function fetchPosts() {
     console.log(postElement);
     postElement.querySelector("img").src = post.links.images[1];
     postElement.querySelector("h2").textContent = post.name.toUpperCase();
-    postList.appendChild(postElement);
+    wonders.appendChild(postElement);
   }
   currentNumber += postsNumber;
 
