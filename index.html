@@ -8,9 +8,26 @@
   </head>
   <body>
     <section class="hero">
-      <section class="search"><input type="search"></section>
+      <nav class="search">
+        <input type="search" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#131313"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-search"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+      </nav>
       <section class="main">
-        <h1>Discover all of the <br>World Wonders</h1>
+        <h1>Discover all of the <br />World Wonders</h1>
       </section>
     </section>
     <template id="single-post">
@@ -40,8 +57,9 @@
         <div class="button"><button>Know More</button></div>
       </div>
     </template>
+    <h2 class="title">World Wonders</h2>
     <section id="wonders" class="wonders"></section>
-    <button id="load">Load More</button>
+    <div class="load-button"><button id="load">Load More</button></div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
