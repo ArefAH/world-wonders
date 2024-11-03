@@ -25,7 +25,7 @@ const createPost = (post) => {
   postElement.querySelector("h3").textContent = post.name.toUpperCase();
   postElement.querySelector("p").textContent = post.location;
   postElement.querySelector("button").addEventListener("click", () =>{
-    localStorage.setItem("selectedPost", JSON.stringify(post));
+    localStorage.setItem("post", JSON.stringify(post));
     window.location.href = "src/pages/information.html"
   });
   wonders.appendChild(postElement);

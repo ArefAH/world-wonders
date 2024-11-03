@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./../styles/information.css" />
+    <link rel="stylesheet" href="./../styles/base.css" />
+  </head>
+  <body>
     <section id="hero" class="hero">
-        <h1></h1>
+      <a class="back" href="./../../index.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-big-left"
+        >
+          <path d="M18 15h-6v4l-7-7 7-7v4h6v6z" />
+        </svg>
+
+        <h2>Back</h2>
+      </a>
+      <div class="title">
+        <h1 id="wonder-name"></h1>
+      </div>
     </section>
-    <p></p>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <script src="./information.html"></script>
-</body>
+
+    <section class="description">
+      <h2>More About This World Wonder:</h2>
+      <p id="summary"></p>
+      <section class="links">
+        <a id="wiki" href=""><img src="./../images/wiki.svg" alt="" /></a>
+        <a id="britannica" href=""
+          ><img src="./../images/britannica.png" alt=""
+        /></a>
+        <a id="maps" href=""><img src="./../images/maps.svg" alt="" /></a>
+        <a id="trip" href=""
+          ><img src="./../images/tripadvisor.png" alt=""
+        /></a>
+      </section>
+    </section>
+    <script src="./../scripts/dom.js"></script>
+    <script src="./../scripts/information.js"></script>
+  </body>
 </html>
